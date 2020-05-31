@@ -1,4 +1,3 @@
-# Import libraries necessary for this project
 import numpy as np
 import pandas as pd
 from time import time
@@ -88,7 +87,7 @@ for feature in data.keys():
     good_data = data.drop(data.index[outliers]).reset_index(drop=True)
 
 #                                     PREDICTION
-## CONVERT REG PROB TO A CLASSIFICATION PROBLEM
+# CONVERT REG PROB TO A CLASSIFICATION PROBLEM
 """
 For our purposes, all wines with ratings less than 5 will fall under 0 (poor) category,
 wines with ratings 5 and 6 will be classified with the value 1 (average), 
